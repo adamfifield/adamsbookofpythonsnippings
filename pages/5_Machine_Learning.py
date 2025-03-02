@@ -1,20 +1,22 @@
 import streamlit as st
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-from sklearn.model_selection import train_test_split, cross_val_score
-from sklearn.linear_model import LogisticRegression, LinearRegression
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
-from sklearn.svm import SVC
-from sklearn.metrics import accuracy_score, classification_report, mean_squared_error, r2_score
-from code_executor import code_execution_widget
+
+#import pandas as pd
+#import numpy as np
+#import matplotlib.pyplot as plt
+#import seaborn as sns
+#from sklearn.model_selection import train_test_split, cross_val_score
+#from sklearn.linear_model import LogisticRegression, LinearRegression
+#from sklearn.tree import DecisionTreeClassifier
+#from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+#from sklearn.svm import SVC
+#from sklearn.metrics import accuracy_score, classification_report, mean_squared_error, r2_score
+
+#from code_executor import code_execution_widget # In-Browser Code Executor disabled
 
 st.title("Machine Learning Model Training")
 
 # Sidebar persistent code execution widget
-code_execution_widget()
+#code_execution_widget()
 
 st.markdown("## 📌 Machine Learning Model Training & Evaluation")
 

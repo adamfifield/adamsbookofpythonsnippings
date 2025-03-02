@@ -1,14 +1,14 @@
 import streamlit as st
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler, MinMaxScaler, OneHotEncoder, LabelEncoder
-from sklearn.impute import SimpleImputer
-from code_executor import code_execution_widget
+#import pandas as pd
+#from sklearn.model_selection import train_test_split
+#from sklearn.preprocessing import StandardScaler, MinMaxScaler, OneHotEncoder, LabelEncoder
+#from sklearn.impute import SimpleImputer
+#from code_executor import code_execution_widget # In-Browser Code Executor disabled
 
 st.title("Machine Learning Preprocessing")
 
 # Sidebar persistent code execution widget
-code_execution_widget()
+#code_execution_widget()
 
 st.markdown("## 📌 Machine Learning Preprocessing Techniques")
 

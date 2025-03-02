@@ -1,10 +1,10 @@
 import streamlit as st
-from code_executor import code_execution_widget
+# from code_executor import code_execution_widget # In-Browser Code Executor disabled
 
 st.title("Data Wrangling")
 
 # Sidebar persistent code execution widget
-code_execution_widget()
+#code_execution_widget()
 
 st.markdown("## 📌 Data Wrangling Techniques")
 

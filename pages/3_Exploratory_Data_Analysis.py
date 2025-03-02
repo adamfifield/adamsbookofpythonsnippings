@@ -1,13 +1,13 @@
 import streamlit as st
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-from code_executor import code_execution_widget
+#import pandas as pd
+#import matplotlib.pyplot as plt
+#import seaborn as sns
+# from code_executor import code_execution_widget # In-Browser Code Executor disabled
 
 st.title("Exploratory Data Analysis (EDA)")
 
 # Sidebar persistent code execution widget
-code_execution_widget()
+#code_execution_widget()
 
 st.markdown("## 📌 Exploratory Data Analysis (EDA) Techniques")
 
