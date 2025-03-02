@@ -1,0 +1,8 @@
+[theme]
+base="dark"  # Optional: Change to "light" if preferred
+
+[server]
+headless=true
+
+[ui]
+page_title = "Home"
