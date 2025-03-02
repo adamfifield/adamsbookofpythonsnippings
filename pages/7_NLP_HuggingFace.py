@@ -1,7 +1,7 @@
 import streamlit as st
-import torch
-from transformers import pipeline, AutoModelForSequenceClassification, AutoTokenizer
-from code_executor import code_execution_widget
+#import torch
+#from transformers import pipeline, AutoModelForSequenceClassification, AutoTokenizer
+#from code_executor import code_execution_widget # In-Browser Code Executor disabled
 
 st.title("Natural Language Processing (NLP) with Hugging Face")
 

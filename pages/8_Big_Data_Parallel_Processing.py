@@ -1,9 +1,9 @@
 import streamlit as st
-import pandas as pd
-import dask.dataframe as dd
-from multiprocessing import Pool
-import concurrent.futures
-from code_executor import code_execution_widget
+#import pandas as pd
+#import dask.dataframe as dd
+#from multiprocessing import Pool
+#import concurrent.futures
+#from code_executor import code_execution_widget # In-Browser Code Executor disabled
 
 st.title("Big Data & Parallel Processing")
 
