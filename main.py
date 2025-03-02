@@ -3,36 +3,85 @@ from pathlib import Path
 
 st.title("Adam's Book of Python Snippings")
 
-# Define notebooks and their descriptions
+st.header("📂 Quick-Start Jupyter Notebooks")  # H2 Heading
+
+st.markdown("These Jupyter notebooks contain structured reference implementations for various data science, machine learning, and AI workflows. Each entry includes direct access to the source files.")
+
+# Define notebooks and their descriptions (formatted as keyword lists)
 notebooks = [
-    ("📂 Connecting to External Data Sources", "Learn how to connect to APIs, PostgreSQL, and MongoDB.", "connecting_to_data_sources.ipynb"),
-    ("🛠️ Data Wrangling", "Clean and preprocess data effectively using Pandas.", "data_wrangling.ipynb"),
-    ("📊 Exploratory Data Analysis", "Perform statistical analysis and visualizations.", "exploratory_data_analysis.ipynb"),
-    ("🏆 Feature Engineering & Selection", "Enhance dataset features for better model performance.", "feature_engineering.ipynb"),
-    ("🎯 ML Preprocessing", "Prepare datasets for machine learning models.", "ml_preprocessing.ipynb"),
-    ("🤖 Training & Evaluating ML Models", "Train and evaluate regression and classification models.", "ml_training_evaluation.ipynb"),
-    ("⏳ Time Series Data Preparation", "Handle time-based datasets for forecasting.", "time_series_analysis.ipynb"),
-    ("🚀 Deploying ML Models", "Use FastAPI & Streamlit to serve ML models.", "deploy_ml_models.ipynb"),
-    ("🔍 Model Interpretability", "Explain ML model predictions using SHAP & LIME.", "model_interpretability.ipynb"),
-    ("🏋️ Fine-Tuning Deep Learning", "Optimize pretrained models using transfer learning.", "fine_tuning_deep_learning.ipynb"),
-    ("🧠 LLM Inference & Fine-Tuning", "Run & fine-tune Large Language Models (GPT, BERT).", "llm_fine_tuning.ipynb"),
-    ("🔥 Big Data with PySpark", "Process massive datasets efficiently using PySpark.", "big_data_pyspark.ipynb"),
+    ("Connecting to External Data Sources",
+     "pandas, requests, SQLAlchemy, pymongo, REST APIs, OAuth, pagination, authentication, query optimization, error handling.",
+     "connecting_to_data_sources"),
+
+    ("Data Wrangling",
+     "pandas, NumPy, missing values, imputation, dropping, duplicates, pivot, melt, outliers, IQR, log transformation.",
+     "data_wrangling"),
+
+    ("Exploratory Data Analysis",
+     "pandas, NumPy, Matplotlib, Seaborn, descriptive statistics, skewness, correlation heatmaps, boxplots, histograms, outliers.",
+     "exploratory_data_analysis"),
+
+    ("Feature Engineering & Selection",
+     "pandas, Scikit-Learn, one-hot encoding, label encoding, MinMaxScaler, StandardScaler, interaction terms, feature selection, mutual information, decision trees.",
+     "feature_engineering"),
+
+    ("ML Preprocessing",
+     "Scikit-Learn, pandas, missing value handling, mean/mode imputation, standardization, normalization, train-test split, stratified sampling, categorical encoding.",
+     "ml_preprocessing"),
+
+    ("Training & Evaluating ML Models",
+     "Scikit-Learn, Linear Regression, Logistic Regression, Decision Trees, Random Forest, cross-validation, GridSearchCV, accuracy, precision, recall, F1-score, MSE, R².",
+     "ml_training_evaluation"),
+
+    ("Time Series Data Preparation",
+     "pandas, NumPy, Statsmodels, datetime extraction, rolling window, stationarity (ADF test), differencing, feature engineering, ARIMA.",
+     "time_series_analysis"),
+
+    ("Deploying ML Models",
+     "FastAPI, Streamlit, joblib, model serialization, REST API, HTTP requests, model inference, API endpoints, security, scalability.",
+     "deploy_ml_models"),
+
+    ("Model Interpretability",
+     "SHAP, LIME, feature importance, partial dependence plots (PDPs), explainability, visualization, decision trees, interpretability strategies.",
+     "model_interpretability"),
+
+    ("Fine-Tuning Deep Learning",
+     "PyTorch, TensorFlow, transfer learning, ResNet-50, freezing/unfreezing layers, dropout, weight decay, learning rate adjustment, differential training.",
+     "fine_tuning_deep_learning"),
+
+    ("LLM Inference & Fine-Tuning",
+     "Hugging Face, Transformers, GPT, BERT, text generation, tokenization, dataset preparation, LoRA fine-tuning, quantization, model deployment.",
+     "llm_fine_tuning"),
+
+    ("Big Data with PySpark",
+     "PySpark, Spark DataFrames, Parquet, CSV, schema definitions, caching, repartitioning, aggregations, distributed computing, performance optimization.",
+     "big_data_pyspark"),
 ]
 
-st.title("📂 Quick-Start Jupyter Notebooks")
-
-st.markdown("These downloadable Jupyter notebooks contain ready-to-use templates for common data science and machine learning workflows.")
-
 # Create a single-column structured list
-for title, description, file in notebooks:
-    file_path = Path(f"notebooks/{file}")  # Ensure correct file path
+for title, description, file_stem in notebooks:
+    ipynb_path = Path(f"notebooks/{file_stem}.ipynb")  # Path for .ipynb file
+    py_path = Path(f"notebooks/{file_stem}.py")  # Path for .py file
 
     with st.container():
-        st.write(f"**{title}** - {description}")
-        st.download_button(
-            label="📥 Download",
-            data=open(file_path, "rb").read(),
-            file_name=file,
-            mime="application/octet-stream"
-        )
+        st.subheader(f"📘 {title}")  # H3 Heading
+        st.write(description)
+
+        # Align buttons in a row
+        col1, col2 = st.columns([0.15, 0.85])  # Adjust width proportions for alignment
+        with col1:
+            st.download_button(
+                label="📥 .ipynb",
+                data=open(ipynb_path, "rb").read(),
+                file_name=f"{file_stem}.ipynb",
+                mime="application/octet-stream"
+            )
+        with col2:
+            st.download_button(
+                label="📥 .py",
+                data=open(py_path, "rb").read(),
+                file_name=f"{file_stem}.py",
+                mime="application/octet-stream"
+            )
+
         st.markdown("---")  # Separator for clarity
