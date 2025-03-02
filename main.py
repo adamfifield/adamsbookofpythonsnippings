@@ -1,7 +1,7 @@
 import streamlit as st
 from pathlib import Path
 
-st.title("Python Reference Manual")
+st.title("Adam's Book of Python Snippings")
 
 # Define notebooks and their descriptions
 notebooks = [
