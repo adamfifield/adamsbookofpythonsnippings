@@ -1,20 +1,24 @@
 # 📖 Graph-Based Machine Learning
 
 ### **Description**  
-This section covers **graph construction**, **graph embeddings (Node2Vec, DeepWalk)**, and **Graph Neural Networks (GNNs)**.
+This section covers **graph construction and visualization**, **graph embeddings (Node2Vec, DeepWalk)**, **Graph Neural Networks (GCNs, GATs)**, and **community detection algorithms**.
 
 ---
 
 ## ✅ **Checklist & Key Considerations**  
 
-- ✅ **Graph Construction**  
-  - Build a graph using **NetworkX (`nx.Graph()`)**.  
-  - Represent nodes and edges for learning tasks.  
+- ✅ **Graph Construction & Visualization**  
+  - Use **NetworkX** to create and manipulate graphs.  
+  - Visualize graph structures using `nx.draw()`.  
 
 - ✅ **Graph Embeddings**  
-  - Train embeddings with **Node2Vec** for feature representation.  
-  - Use **DeepWalk** to generate node sequences.  
+  - Train **Node2Vec embeddings** to learn node representations.  
+  - Use **DeepWalk** to generate node sequences for embedding training.  
 
 - ✅ **Graph Neural Networks (GNNs)**  
-  - Use **GCNConv** layers in PyTorch Geometric.  
-  - Implement message passing for graph classification.  
+  - Implement **GCNs (Graph Convolutional Networks)** for node classification.  
+  - Use **GATs (Graph Attention Networks)** for attention-based learning.  
+
+- ✅ **Community Detection**  
+  - Apply **Girvan-Newman clustering** for detecting graph communities.  
+  - Use **modularity-based methods** for social network clustering.  

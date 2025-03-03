@@ -62,6 +62,22 @@ notebooks = {
     "Graph-Based Machine Learning": {
         "md_file": "graph_ml.md",
         "py_file": "graph_ml.py",
+    },
+    "Fine-Tuning Deep Learning Models": {
+        "md_file": "fine_tuning_dl.md",
+        "py_file": "fine_tuning_dl.py",
+    },
+    "Fine-Tuning LLMs": {
+        "md_file": "llm_fine_tuning.md",
+        "py_file": "llm_fine_tuning.py",
+    },
+    "Big Data with PySpark": {
+        "md_file": "big_data_pyspark.md",
+        "py_file": "big_data_pyspark.py",
+    },
+    "Model Interpretability & Explainability": {
+        "md_file": "model_interpretability.md",
+        "py_file": "model_interpretability.py",
     }
 }
 

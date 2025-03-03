@@ -1,20 +1,25 @@
 # 📖 Recommendation Systems
 
 ### **Description**  
-This section covers **collaborative filtering**, **content-based filtering**, and **hybrid recommendation systems**.
+This section covers **user-based and item-based collaborative filtering**, **content-based filtering using text similarity**, **hybrid recommendation systems**, and **deep learning-based recommendation models**.
 
 ---
 
 ## ✅ **Checklist & Key Considerations**  
 
 - ✅ **Collaborative Filtering**  
-  - Use **Singular Value Decomposition (SVD)** for latent factor models.  
-  - Apply **Surprise library** for user-item matrix recommendations.  
+  - Implement **SVD (Singular Value Decomposition)** for matrix factorization.  
+  - Use **KNN-based collaborative filtering** for nearest-neighbor recommendations.  
+  - Ensure **cold start problems** are addressed with hybrid methods.  
 
 - ✅ **Content-Based Filtering**  
-  - Convert text descriptions into **TF-IDF vectors**.  
-  - Compute similarity using **cosine similarity**.  
+  - Convert textual descriptions into **TF-IDF feature vectors**.  
+  - Compute **cosine similarity** for item-to-item recommendations.  
 
 - ✅ **Hybrid Recommendation Systems**  
-  - Combine **collaborative** and **content-based filtering**.  
-  - Normalize scores before blending.  
+  - Combine **collaborative and content-based filtering** for better accuracy.  
+  - Implement **weighted scores** to balance user preferences and content similarity.  
+
+- ✅ **Deep Learning-Based Recommenders**  
+  - Train **neural networks** to learn user-item interactions.  
+  - Use **autoencoders** for embedding-based recommendation models.  
