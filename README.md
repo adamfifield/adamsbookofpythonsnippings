@@ -6,8 +6,7 @@
 
 ## 📌 Features
 ✅ **Comprehensive reference manual** with **multipage Streamlit UI**  
-✅ **Quick-start Jupyter Notebooks** for common **data science & ML tasks**  
-✅ **Prebuilt `.ipynb` and `.py` files** for seamless integration  
+✅ **Quick-start Python code** and **Checklists** for common **data science & ML workflows**  
 ✅ **Well-documented, self-contained Python snippets**  
 ✅ **Covers EDA, ML, Deep Learning, LLMs, Deployment & Big Data processing**
 
