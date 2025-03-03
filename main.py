@@ -23,6 +23,10 @@ notebooks = {
         "md_file": "exploratory_data_analysis.md",
         "py_file": "exploratory_data_analysis.py",
     },
+    "Anomaly Detection": {
+        "md_file": "anomaly_detection.md",
+        "py_file": "anomaly_detection.py",
+    },
     "Feature Engineering": {
         "md_file": "feature_engineering.md",
         "py_file": "feature_engineering.py",
@@ -42,8 +46,25 @@ notebooks = {
     "Natural Language Processing (NLP)": {
         "md_file": "natural_language_processing.md",
         "py_file": "natural_language_processing.py",
+    },
+    "Reinforcement Learning": {
+        "md_file": "reinforcement_learning.md",
+        "py_file": "reinforcement_learning.py",
+    },
+    "Computer Vision": {
+        "md_file": "computer_vision.md",
+        "py_file": "computer_vision.py",
+    },
+    "Recommendation Systems": {
+        "md_file": "recommendation_systems.md",
+        "py_file": "recommendation_systems.py",
+    },
+    "Graph-Based Machine Learning": {
+        "md_file": "graph_ml.md",
+        "py_file": "graph_ml.py",
     }
 }
+
 
 # Dropdown for selecting a topic
 selected_topic = st.selectbox("Select a topic to begin:", [""] + list(notebooks.keys()))
